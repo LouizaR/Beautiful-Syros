@@ -1,0 +1,291 @@
+* {  /* βασικά χαρακτηριστικά για όλο το κώδικα, by default */
+    box-sizing: border-box;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    
+    }
+  
+
+body { 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px; 
+ --firstColor: #8EA4B6ff; 
+ --secondColor: #E5E5E5ff; 
+ --thirdColor: #A8BDD1ff;
+ --fourthColor: #000A4E;
+}
+
+
+
+h1 { 
+ font-size: 4rem;
+}
+
+h2 { 
+ font-size: 2rem;
+}
+
+h3 { 
+ font-size: 1.5rem;
+}
+
+.active { 
+  text-decoration: overline;
+
+
+
+
+}
+
+/*---------------------WRAPPER -----------------*/
+
+div#wrapper {
+width: 100%;
+max-width: none;
+margin: auto;
+display: flex;
+flex-direction: column;
+min-height: 100vh; /*100% apo to ipsos tis othonis*/
+}
+
+
+
+/* -------------HEADER------------ */
+
+header {
+width: 100%;
+height: 90px;
+background-color: var(--firstColor);
+padding: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: 'Prata', serif;
+}
+
+header h1 {
+font-family: 'Dancing Script', cursive; 
+color: var(--fourthColor);
+position: absolute;
+padding-left: 100px;
+
+}
+
+header div#logo {
+width: 40px;
+height: 70px;
+}
+
+header div#logo img{
+height: 100%;
+}
+
+/* header div#icons-header {
+  position: relative;
+  right: 200px;
+  width: 80%;
+  flex-direction: row;
+  } */
+
+
+/* -------------menu -------------------*/
+
+header nav {
+  position:absolute;
+  right: 0px; /*για να μην παει το μενου αριστερα*/
+  top: 50px;
+  min-width: 280px;
+  background-color: var(--firstColor);
+  
+}
+
+
+header nav a {
+  color: white;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+ 
+}
+
+header nav a:hover {  /* ψευδοκλάση */
+  text-decoration: overline;
+  }
+
+
+/*---------------------*/ 
+
+
+.display-none {
+  display: none;
+
+
+}
+
+/* --------------MAIN------------ */
+
+main {
+width: 100%;
+background-image: url(Images/soft-wave-blue-ocean-sandy-beach_102644-39.jpg); 
+flex-grow: 1;
+}
+
+
+/* --------------FOOTER------------ */
+
+footer {
+width: 100%;
+max-width: none;
+margin: auto;
+background-color: var(--thirdColor); 
+padding: 20px; /* ίδιο με header σχεδόν*/
+display: flex;
+flex-direction: row;
+justify-content: space-between; /* για να υπάρχει κενό αναμεσα τους */
+font-family:'Times New Roman', Times, serif
+
+}
+
+footer div {
+border: rgb(254, 254, 254) solid thin;
+width: 32%; /* απόσταση κάθε div από το footer  */
+}
+
+footer img {
+height: 30px;
+width: 30px;
+margin-left: 10px;
+
+
+}
+
+footer div:nth-child(1) {
+ width: 100%
+ 
+}
+
+footer div:nth-child(2) {
+ width: 100%;
+
+
+}
+
+footer div:nth-child(2) a{
+ width: 100%;
+ color: black; 
+ transition: 0.5s;
+ margin-bottom: 3px;
+ display: flex;
+ flex-direction: row;
+ 
+
+}
+
+
+footer div:nth-child(2) a:hover{
+ margin-left: 5px;
+ text-decoration: underline;
+}
+
+footer div:nth-child(3) {
+ width: 100%;
+
+}
+
+footer div:nth-child(3) a{
+  width: 100%;
+  color: black; 
+  transition: 0.5s;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+ 
+ }
+
+footer div:nth-child(3) a:hover{
+  margin-left: 5px;
+  text-decoration: underline;
+ }
+
+ footer div:nth-child(4) {
+  width: 100%;
+ 
+ }
+
+
+footer div h3{
+color: var(--fourthColor);
+margin-bottom: 10px;
+}
+
+
+ul {
+list-style-type: square;
+}
+
+
+
+/*--------------------Go to top button---------*/
+
+#myBtn {
+  
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(89, 109, 125); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+  font-size: 30px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; 
+  opacity: 0.5;
+}
+
+
+/*---------------------END-----------------------*/
+
+.ending {
+  margin-top: 5px;
+text-align: center;
+ 
+ }
+
+
+/*-----------------BREAKPOINTS--------------*/
+
+
+@media screen and (max-width: 800px)
+{
+
+   header nav {
+     display: none;
+     }
+}
+
+@media screen and (max-width: 720px)
+{
+
+    footer {
+       flex-direction: column;
+     }
+      
+    footer div {
+       width: 100%;
+       margin-bottom: 1rem;}
+    }
+
+
+@font-face {
+      font-family: headerfont;
+      src: url(Fonts/Roboto-BoldItalic.ttf);
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Syros | Contacts Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="my_site.css">
+
+
+    <script>
+
+
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+      
+      
+      </script>
+
+   <style>
+
+
+section {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 10px;
+         margin-top: 50px;
+         position: relative;
+         left: 60px;
+      }
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  height: 210px;
+  width: 280px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 210px;
+  width: 280px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8ba9b3;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+    
+<div id="wrapper">
+  <header> <!-- ένα site χωρίζεται σε 3 μέρη, header, main, footer -->
+    <div id="logo">
+          <img src="Images/Beautiful Syros Logo.png">
+    </div>
+      
+    <h1>
+      Beautiful Syros
+    </h1>
+
+
+      <nav> <!-- ετικέτα μενού -->
+           <a href="home.html">Home</a>
+           <a class="active" href="store.html">Our Store</a>
+           <a href="oursyros.html">Our Syros</a>
+
+      </nav>
+
+   </header>
+
+    <main>
+         
+
+<section>
+
+      <div class="container">
+        <img src="Images/loukoumi.jpg"  class="image">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      
+
+      <div class="container">
+         <img src="Images/loukoumia-anam.jpg" class="image">
+         <div class="overlay">
+           <div class="text">Hello World</div>
+         </div>
+       </div>
+
+
+       <div class="container">
+         <img src="Images/halvadopita.jpg" class="image">
+         <div class="overlay">
+           <div class="text">Hello World</div>
+         </div>
+       </div>
+
+
+       <div class="container">
+         <img src="Images/honey.jpg" class="image">
+         <div class="overlay">
+           <div class="text">Hello World</div>
+         </div>
+       </div>
+
+    </section>
+
+    </main>
+
+    <footer>
+      <div>
+         <h3>Our Team</h3>
+         <p>"Beautiful Syros" was founded in 2015 by a group of people who love and live in this heavenly island with the desire to spead the love and unique tradition around the world ❤ </p>
+
+     
+      </div> 
+
+
+      <div>
+         <h3>Social Media</h3>
+         <ul >
+            
+           <a href="facebook.html">On Facebook <img src="Images/fb.png"></a> </li>
+          <a href="instagram.html">On Instagram<img src="Images/insta.png"></a></li>
+   
+          </ul>
+         </div>
+
+
+
+      <div>
+         <h3>Contact </h3>
+         <ul >
+            <a href="info@oursyros.gr">Call xxxxx<img src="Images/phone.png"></a></li>
+          <a href="info@oursyros.gr">Email<img src="Images/envelope.png"></a></li>
+
+         </ul> 
+      </div>
+
+      <div>
+         <h3>Newsletter</h3>
+         <p>Want to receive our news?</p>
+         <form>
+            <input type="email" name="your-email">
+            <input type="submit" value="Submit Email">
+         </form>
+     
+         <div>
+         <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+         </div>
+     
+      </div>
+
+
+
+    </footer>
+
+    <nav class="ending">
+      <p>© 2023, Beautiful Syros</p>
+      </nav>
+
+</div>
+
+
+
+</body>
+</html>
