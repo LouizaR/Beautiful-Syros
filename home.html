@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Syros | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="my_site.css">
+
+
+
+<script>
+
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+</script>
+
+
+<style>
+
+
+/*-------------------slideshow--------------*/
+
+
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 900px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.slideshow-container h3{
+  color: #717171;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.slideshow-container h3:hover{
+  color: #000000;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-slide {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade img{
+   width: 400px;
+   height: 380px;
+
+
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+/*---------------------Left Picture----------------------*/
+
+section.first {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         
+}
+
+
+
+section.row {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 0px;
+         margin-top: 80px;
+         margin-bottom: 30px;
+         position: relative;
+         left: 100px;
+      }
+
+
+      section.row div.card div.product img { 
+         height: 500px;
+         width: 700px;
+         }
+
+      section.row div.card div.product img:hover { 
+        
+         opacity: 0.65;
+         }
+
+      section.row div.card div.data { 
+         position: absolute;
+         padding: 10px;
+         bottom: 0;
+         background: rgb(0, 0, 0); 
+         background: rgba(0, 0, 0, 0.4); 
+         color: #f1f1f1;
+         width: 700px;
+         height: 120px;
+         }
+
+
+         section.row div.card div.data h2 { 
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            transition: all 0.5s;
+            margin-bottom: 10px;
+         }
+
+         section.row div.card div.data p.treat { 
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(63, 103, 137);
+            transition: all 0.5s;
+         }
+/*--------------------------------------------------------------*/
+
+/*------------------------Vamvakaris Picture------------------------*/
+
+         .container {
+         width: 40%;
+         margin-top: 80px;
+         margin-bottom: 30px;
+         position: relative;
+         right: 80px;
+         }
+
+         .container img{
+            border-radius: 30px;
+         }
+      
+         .container img:hover {
+            padding: 20px;
+         }
+
+         .text-block {
+         position: absolute;
+         bottom: 20px;
+         right: 20px;
+         background-color: black;
+         color: white;
+         padding-left: 20px;
+         padding-right: 20px;
+         }
+
+/*----------------------------------------------------------*/
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    
+<div id="wrapper">
+  <header> <!-- ένα site χωρίζεται σε 3 μέρη, header, main, footer -->
+    <div id="logo">
+          <img src="Images/Beautiful Syros Logo.png">
+    </div>
+      
+    <h1>
+      Beautiful Syros
+    </h1>
+
+
+
+
+      <nav> <!-- ετικέτα μενού -->
+           <a class="active" href="home.html">Home</a>
+           <a href="store.html">Our Store</a>
+           <a href="oursyros.html">Our Syros</a>
+
+      </nav>
+
+   </header>
+
+    <main>
+
+
+<section class="first">
+
+      <section class="row">
+
+         <div class="card">
+
+            <div class="product">
+               <a href="store.html"><img src="Images/products.jpg"></a>
+            </div>
+           
+
+            <div class="data">
+            <h2>Special delivery from Syros</h2>
+            <p class="treat"><span>Check our new & fresh traditional products! 
+               Here you will find delicious, handmade products of Syros, like the traditional delicacies known as "loukoumia" & "halvadopita".</span> </p>
+            </div>
+
+            </div>
+
+
+
+            </section>
+
+
+            
+      <div class="container">
+         <a href="https://www.youtube.com/watch?v=EdJvHLKRgxk"><img src="Images/markos.jpg"  style="width:100%;"></a>
+         <div class="text-block">
+           <h4>Markos Vamvakaris</h4>
+           <p>The "Patriarch" of rebetiko</p>
+         </div>
+       </div>
+          
+      </section> 
+
+
+
+      <!-- ---------------------------Slideshow------------------------- -->
+      <div class="slideshow-container">
+      
+         <div class="mySlides fade">
+           <img src="Images/hermoupoli.jpg" style="width:100%">
+           <div class="text">
+            <a href="oursyros.html"><h3>Book your next holiday in Syros now!</h3></a>
+         </div>
+         </div>
+         
+         <div class="mySlides fade">
+           <img src="Images/kinigorgona.jpg" style="width:100%">
+           <div class="text">
+            <a href="oursyros.html"><h3>Book your next holiday in Syros now!</h3></a>
+            </div>
+         </div>
+         
+         <div class="mySlides fade">
+           <img src="Images/varibeach.jpg" style="width:100%">
+           <div class="text">
+            <a href="oursyros.html"><h3>Book your next holiday in Syros now!</h3></a>
+         </div>
+         </div>
+         
+         </div>
+         <br>
+         
+         <div style="text-align:center">
+           <span class="dot"></span> 
+           <span class="dot"></span> 
+           <span class="dot"></span> 
+         </div>
+   
+
+<!-- -------------------------------------------------------------- -->
+
+    </main>
+
+
+
+      <footer>
+         <div>
+            <h3>Our Team</h3>
+            <p>"Beautiful Syros" was founded in 2015 by a group of people who love and live in this heavenly island with the desire to spead the love and unique tradition around the world ❤ </p>
+
+        
+         </div> 
+
+
+         <div>
+            <h3>Social Media</h3>
+            <ul >
+               
+              <a href="facebook.html">On Facebook <img src="Images/fb.png"></a> </li>
+             <a href="instagram.html">On Instagram<img src="Images/insta.png"></a></li>
+      
+             </ul>
+            </div>
+
+
+
+         <div>
+            <h3>Contact </h3>
+            <ul >
+               <a href="info@oursyros.gr">Call xxxxx<img src="Images/phone.png"></a></li>
+             <a href="info@oursyros.gr">Email<img src="Images/envelope.png"></a></li>
+
+            </ul> 
+         </div>
+
+         <div>
+            <h3>Newsletter</h3>
+            <p>Want to receive our news?</p>
+            <form>
+               <input type="email" name="your-email">
+               <input type="submit" value="Submit Email">
+            </form>
+        
+            <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+            </div>
+        
+         </div>
+
+
+
+       </footer>
+
+       <nav class="ending">
+         <p>© 2023, Beautiful Syros</p>
+         </nav>
+
+</div>
+
+
+
+<script>
+
+   /*----------------------Slideshow-------------*/
+
+   let slideIndex = 0;
+   showSlides();
+   
+   function showSlides() {
+     let i;
+     let slides = document.getElementsByClassName("mySlides");
+     let dots = document.getElementsByClassName("dot");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}    
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active-slide", "");
+     }
+     slides[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " active-slide";
+     setTimeout(showSlides, 2000); // Change image every 2 seconds
+   }
+   </script>
+
+
+
+
+
+</body>
+</html>
